@@ -123,7 +123,7 @@ namespace ZilpioBuzz
 			// Calcola i secondi e i decimi di secondo rimanenti
 			int secondsLeft = timeLeft / 10;  // Secondi rimanenti
 			int decimiLeft = timeLeft % 10;   // Decimi di secondo rimanenti
-			return $"{secondsLeft}.{decimiLeft} s";
+			return $"{secondsLeft}.{decimiLeft}s ";
 		}
 		private async void StopTimer()
 		{
@@ -585,5 +585,6 @@ namespace ZilpioBuzz
 		{
 			ClearLogs();
 		}
+
 	}
 }
