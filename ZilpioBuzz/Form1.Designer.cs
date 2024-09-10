@@ -273,10 +273,10 @@
 			// 
 			button3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 			button3.AutoSize = true;
-			button3.Location = new Point(79, 68);
+			button3.Location = new Point(79, 93);
 			button3.Margin = new Padding(3, 2, 3, 2);
 			button3.Name = "button3";
-			button3.Size = new Size(376, 102);
+			button3.Size = new Size(580, 102);
 			button3.TabIndex = 26;
 			button3.Text = "Ready";
 			button3.UseVisualStyleBackColor = true;
@@ -284,17 +284,18 @@
 			// 
 			// TimerLabel
 			// 
-			TimerLabel.Font = new Font("Microsoft Sans Serif", 140F, FontStyle.Regular, GraphicsUnit.Point);
-			TimerLabel.Location = new Point(4, 195);
+			TimerLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			TimerLabel.Font = new Font("Microsoft Sans Serif", 250F, FontStyle.Regular, GraphicsUnit.Point);
+			TimerLabel.Location = new Point(4, 197);
 			TimerLabel.Name = "TimerLabel";
-			TimerLabel.Size = new Size(543, 211);
+			TimerLabel.Size = new Size(726, 320);
 			TimerLabel.TabIndex = 27;
 			TimerLabel.Text = "30";
 			TimerLabel.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// resetTimeTextBox
 			// 
-			resetTimeTextBox.Location = new Point(152, 34);
+			resetTimeTextBox.Location = new Point(152, 59);
 			resetTimeTextBox.Margin = new Padding(3, 2, 3, 2);
 			resetTimeTextBox.Name = "resetTimeTextBox";
 			resetTimeTextBox.Size = new Size(100, 22);
@@ -303,7 +304,7 @@
 			// label11
 			// 
 			label11.AutoSize = true;
-			label11.Location = new Point(166, 19);
+			label11.Location = new Point(166, 44);
 			label11.Name = "label11";
 			label11.Size = new Size(62, 13);
 			label11.TabIndex = 28;
@@ -312,7 +313,7 @@
 			// label12
 			// 
 			label12.AutoSize = true;
-			label12.Location = new Point(313, 19);
+			label12.Location = new Point(313, 44);
 			label12.Name = "label12";
 			label12.Size = new Size(59, 13);
 			label12.TabIndex = 30;
@@ -320,7 +321,7 @@
 			// 
 			// totalTimeTextBox
 			// 
-			totalTimeTextBox.Location = new Point(296, 34);
+			totalTimeTextBox.Location = new Point(296, 59);
 			totalTimeTextBox.Margin = new Padding(3, 2, 3, 2);
 			totalTimeTextBox.Name = "totalTimeTextBox";
 			totalTimeTextBox.Size = new Size(100, 22);
@@ -328,7 +329,8 @@
 			// 
 			// buttonReset
 			// 
-			buttonReset.Location = new Point(91, 427);
+			buttonReset.Anchor = AnchorStyles.Bottom;
+			buttonReset.Location = new Point(166, 504);
 			buttonReset.Margin = new Padding(3, 2, 3, 2);
 			buttonReset.Name = "buttonReset";
 			buttonReset.Size = new Size(349, 146);
@@ -341,10 +343,10 @@
 			// 
 			eventLogTextBox.Dock = DockStyle.Right;
 			eventLogTextBox.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-			eventLogTextBox.Location = new Point(792, 0);
+			eventLogTextBox.Location = new Point(1055, 0);
 			eventLogTextBox.Margin = new Padding(3, 2, 3, 2);
 			eventLogTextBox.Name = "eventLogTextBox";
-			eventLogTextBox.Size = new Size(395, 584);
+			eventLogTextBox.Size = new Size(395, 857);
 			eventLogTextBox.TabIndex = 33;
 			eventLogTextBox.Text = "";
 			// 
@@ -352,7 +354,7 @@
 			// 
 			button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
 			button4.AutoSize = true;
-			button4.Location = new Point(469, 532);
+			button4.Location = new Point(652, 830);
 			button4.Margin = new Padding(3, 2, 3, 2);
 			button4.Name = "button4";
 			button4.Size = new Size(75, 25);
@@ -364,7 +366,8 @@
 			// 
 			// splitContainer1
 			// 
-			splitContainer1.Location = new Point(1, 0);
+			splitContainer1.Dock = DockStyle.Fill;
+			splitContainer1.Location = new Point(0, 0);
 			splitContainer1.Name = "splitContainer1";
 			// 
 			// splitContainer1.Panel1
@@ -402,15 +405,15 @@
 			splitContainer1.Panel2.Controls.Add(buttonReset);
 			splitContainer1.Panel2.Controls.Add(totalTimeTextBox);
 			splitContainer1.Panel2.Controls.Add(label12);
-			splitContainer1.Size = new Size(792, 584);
-			splitContainer1.SplitterDistance = 241;
+			splitContainer1.Size = new Size(1055, 857);
+			splitContainer1.SplitterDistance = 321;
 			splitContainer1.TabIndex = 35;
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(6F, 13F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1187, 584);
+			ClientSize = new Size(1450, 857);
 			Controls.Add(splitContainer1);
 			Controls.Add(eventLogTextBox);
 			Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
